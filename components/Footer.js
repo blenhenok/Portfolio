@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="flex space-x-6 p-10 px-15">
+    <div className="flex space-x-6 py-3 px-10">
       <Link href="https://github.com/blenhenok" target="_blank" rel="noopener noreferrer">
         <Image src="/icons/github.png" alt="GitHub" width={50} height={50} />
       </Link>

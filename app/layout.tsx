@@ -8,7 +8,6 @@ export const metadata = {
   description: "Personal portfolio website built with Next.js",
 };
 
-// Define the props interface
 interface RootLayoutProps {
   children: React.ReactNode;
 }

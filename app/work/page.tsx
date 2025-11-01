@@ -2,37 +2,37 @@
 export default function Work() {
   const projects = [
     {
-      title: "E-commerce Platform",
+      title: "Chat App",
+      image: "/api/placeholder/400/250",
+      link: "#",
+      github: "https://github.com/blenhenok/Chat-App",
+    },
+    {
+      title: "3D---Virtual-Gallery",
+      image: "/api/placeholder/400/250",
+      link: "#",
+      github: "https://github.com/blenhenok/AURA---Virtual-Gallery",
+    },
+    {
+      title: "Note App",
       image: "/api/placeholder/400/250",
       link: "#",
       github: "#",
     },
     {
-      title: "Task Management App", 
+      title: "Restaurant Website",
       image: "/api/placeholder/400/250",
       link: "#",
-      github: "#",
+      github: "https://github.com/blenhenok/Chercher",
     },
     {
-      title: "Weather Dashboard",
-      image: "/api/placeholder/400/250", 
-      link: "#",
-      github: "#",
-    },
-    {
-      title: "Social Media App",
-      image: "/api/placeholder/400/250",
-      link: "#", 
-      github: "#",
-    },
-    {
-      title: "Fitness Tracker",
+      title: "Movie Website",
       image: "/api/placeholder/400/250",
       link: "#",
-      github: "#",
+      github: "https://github.com/blenhenok/Movie-Website",
     },
     {
-      title: "Recipe Finder",
+      title: "ERP System",
       image: "/api/placeholder/400/250",
       link: "#",
       github: "#",
@@ -46,9 +46,6 @@ export default function Work() {
           <h2 className="text-8xl font-bold text-center text-gray-900 mb-4">
             WORK
           </h2>
-          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-            EXPLORING THE EXPERIENCE
-          </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
