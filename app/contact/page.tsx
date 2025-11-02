@@ -25,12 +25,12 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-6 px-4 sm:px-6 h-full">
+    <section id="contact" className="py-4 px-4 sm:px-6 h-full">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
           Get In Touch
         </h2>
-        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
           I am always interested in new opportunities and exciting projects.
           Lets talk about how we can work together!
         </p>
@@ -92,7 +92,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-2">
             <div>
               <label
                 htmlFor="name"

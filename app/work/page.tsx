@@ -1,44 +1,7 @@
-"use client"
-export default function Work() {
-  const projects = [
-    {
-      title: "Chat App",
-      image: "/api/placeholder/400/250",
-      link: "#",
-      github: "https://github.com/blenhenok/Chat-App",
-    },
-    {
-      title: "3D---Virtual-Gallery",
-      image: "/api/placeholder/400/250",
-      link: "#",
-      github: "https://github.com/blenhenok/AURA---Virtual-Gallery",
-    },
-    {
-      title: "Note App",
-      image: "/api/placeholder/400/250",
-      link: "#",
-      github: "#",
-    },
-    {
-      title: "Restaurant Website",
-      image: "/api/placeholder/400/250",
-      link: "#",
-      github: "https://github.com/blenhenok/Chercher",
-    },
-    {
-      title: "Movie Website",
-      image: "/api/placeholder/400/250",
-      link: "#",
-      github: "https://github.com/blenhenok/Movie-Website",
-    },
-    {
-      title: "ERP System",
-      image: "/api/placeholder/400/250",
-      link: "#",
-      github: "#",
-    },
-  ];
+"use client";
+import { projects } from "../../public/data/projects";
 
+export default function Work() {
   return (
     <div className="min-h-screen bg-white">
       <section className="py-16 px-4 sm:px-6 lg:px-8 min-h-screen">
@@ -54,10 +17,17 @@ export default function Work() {
                 className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow"
               >
                 <div className="h-48 bg-gray-200 relative">
-                  <div className="w-full h-full bg-gray-300 flex items-center justify-center">
-                    <span className="text-gray-600 font-semibold">
-                      {project.title} Image
-                    </span>
+                  <div className="w-full h-full bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                        <span className="text-blue-600 font-bold">
+                          {project.title.charAt(0)}
+                        </span>
+                      </div>
+                      <span className="text-gray-700 font-semibold text-sm">
+                        {project.title}
+                      </span>
+                    </div>
                   </div>
                 </div>
 
@@ -65,6 +35,10 @@ export default function Work() {
                   <h3 className="text-xl font-bold text-gray-900 mb-3">
                     {project.title}
                   </h3>
+
+                  <p className="text-gray-600 text-sm mb-4">
+                    {project.description}
+                  </p>
 
                   <div className="flex space-x-4">
                     <a
@@ -79,6 +53,16 @@ export default function Work() {
                     >
                       GitHub
                     </a>
+                  </div>
+                  <div className="flex flex-wrap gap-3">
+                    {project.techStack.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1 bg-blue-100 text-blue-800 rounded-lg text-xs font-medium mt-4"
+                      >
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>

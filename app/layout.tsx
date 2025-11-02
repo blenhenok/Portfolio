@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 
 export const metadata = {
-  title: "Blen Henok - Portfolio",
+  title: "Blen Henok",
   description: "Personal portfolio website built with Next.js",
 };
 
